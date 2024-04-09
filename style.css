@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font: 18px Besley, Garamond, Georgia, serif;
+    max-width: 1200px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+
+h1,h2,h3,h4,h5,h6 {}
+
+h1 {
+    font-weight: 900;
+}
+
+header,main {
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+nav a {
+    text-decoration:none;
+    padding-right: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: rgb(140, 30, 200);
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: rgba(140, 30, 200,0.75);
+    border-bottom: 5px solid rgba(140, 30, 200,0.75);
+}
+
+@media screen and (min-width:900px) {
+    body {
+        flex-direction: row;
+    }
+
+    header,main {
+        display:block;
+        width: 33%;
+    }
+    header {
+        margin-top: 1rem;
+    }
+
+    nav {
+        margin-left: -1rem;
+        margin-top: 2rem;
+    }
+    nav a {
+        display:block;
+        padding: 0 1rem;
+        margin: 0 0 1px;
+    }
+
+    nav a:link,
+    nav a:visited {
+        border-left: 0px solid white;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+        color: rgba(140, 30, 200,0.75);
+        padding-left: 1rem;
+        border-left: 1rem solid rgba(140, 30, 200,0.75);
+        border-bottom:none;
+    }
+
+    main {
+        width: 67%;
+    }
+
+}
