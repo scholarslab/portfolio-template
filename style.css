@@ -8,6 +8,10 @@ html,body {
     padding:0;
 }
 
+html {
+    background: rgba(0, 200, 200,0.0925);
+}
+
 body {
     font: 18px Besley, Garamond, Georgia, serif;
     max-width: 1200px;
@@ -24,6 +28,10 @@ h1 {
 
 header,main {
     padding: 1rem;
+}
+
+header {
+    background: white;
 }
 
 header h1 {
@@ -57,7 +65,6 @@ nav a:active {
         width: 33%;
     }
     header {
-        margin-top: 1rem;
     }
 
     nav {
@@ -86,6 +93,7 @@ nav a:active {
 
     main {
         width: 67%;
+        padding: 2rem 6rem;
     }
 
 }
